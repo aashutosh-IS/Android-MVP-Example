@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:id="@+id/rowLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/rowTxtCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/bg_txt_contact"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rowTxtCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="CustomerName"
+                android:padding="10dp"
+                android:textSize="16sp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/rowTxtCustomerName"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/rowOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/rowTxtCustomerName"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:text="Owner Name"
+                android:textSize="16sp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/rowOwnerName"
+                android:background="@android:color/black"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
