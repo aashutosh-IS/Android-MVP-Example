@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.mercantile.crm">
+    package="com.ex.crm">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application
@@ -14,8 +14,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Tickets.Activity.TicketActivity"></activity>
-        <activity android:name=".Login.LoginActivity">
+        <activity android:name="com.ex.crm.Tickets.Activity.TicketActivity" />
+        <activity android:name="com.ex.crm.Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
