@@ -12,11 +12,11 @@ import retrofit2.http.POST;
 
 public interface IEndpointApi {
 
-    @POST("")
+    @POST("login")
     Call<LoginDTO> Login(@Body User user);
 
 
-    @GET("")
+    @GET("GetTickets")
     Call<TicketDTO> getTickets();
 
 }

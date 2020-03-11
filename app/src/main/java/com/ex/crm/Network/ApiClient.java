@@ -17,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
+    private static final String BASE_URL = "";
     private static Retrofit retrofit;
 
 
@@ -36,7 +37,7 @@ public class ApiClient {
         }).build();
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("www.ez.com")
+                    .baseUrl(BASE_URL)
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();

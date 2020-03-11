@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.ex.crm.Egx;
 import com.ex.crm.Tickets.Activity.TicketActivity;
 import com.ex.crm.Login.Presenter.LoginPresenter;
 import com.ex.crm.R;
@@ -59,7 +60,7 @@ public class LoginActivity extends AppCompatActivity implements ILogin.View {
         loginBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loginPresenter.loginButtonClick(loginUserName.getText().toString(),loginPassword.getText().toString());
+                loginPresenter.loginButtonClick("super","super");
             }
         });
 
@@ -98,7 +99,7 @@ public class LoginActivity extends AppCompatActivity implements ILogin.View {
 
         }else {
 
-        Intent intent = new Intent(this, TicketActivity.class);
+        Intent intent = new Intent(this, Egx.class);
         startActivity(intent);
         finish();
         }

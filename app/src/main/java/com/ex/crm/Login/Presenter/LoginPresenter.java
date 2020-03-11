@@ -54,7 +54,7 @@ public class LoginPresenter implements ILogin.Presenter {
                 if (response.isSuccessful() && response.body() != null) {
                     if (apiResponse != null) {
                         saveDataToPreference(apiResponse);
-                        Log.d("RES", "onResponse: "+ GsonUtli.toString(apiResponse));
+//                        Log.d("RES", "onResponse: "+ GsonUtli.toString(apiResponse));
                         view.goToMainActivity();
 
                     }
